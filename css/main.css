@@ -17,7 +17,6 @@ body {
   font-size: var(--textsize)!important;
   font-family: Montserrat!important;
   margin:0px;
-  border-color: black;
 }
 
 hr{
@@ -34,17 +33,8 @@ h3{
 h1, h2, h3, h4, h5{
   font-weight: 600!important;
 }
-button{
-  border:0px!important;
-}
-button:active{
-  background-color: none!important;
-  border-style: outset;
-  border: 0px;
-}
-
 ._hero{
-  /* background-image: url(/images/svg/topdark.svg); */
+  /* background-image: url(./images/svg/topdark.svg); */
   background-color: var(--boldcolor);
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -61,7 +51,7 @@ button:active{
 }
 
 ._sepB{
-  background-image: url(/images/svg/styletop.svg);
+  background-image: url(./images/svg/styletop.svg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -69,7 +59,7 @@ button:active{
 }
 
 ._sepT{
-  background-image: url(/images/svg/bottomstyle.svg);
+  background-image: url(./images/svg/bottomstyle.svg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -156,23 +146,35 @@ button:active{
 }
 
 ._btn{
-  padding: 20px !important;
   font-size: var(--textsize)!important;
-  --bs-btn-color: white!important;
-  --bs-btn-bg:var(--boldcolor)!important;
-  --bs-btn-hover-color:var(--bgcolor)!important;
-  --bs-btn-border-color:var(--bgcolor)!important;
+  --bs-btn-color: var(--boldcolor)!important;
+  --bs-btn-bg:var(--bgcolor)!important;
   --bs-btn-font-weight:1000!important;
+  --bs-btn-border-width: 3px!important;
+  --bs-btn-border-color: var(--boldcolor)!important;
+  --bs-btn-hover-border-color: var(--boldcolor)!important;
+  --bs-btn-hover-color:var(--bgcolor)!important;
+  --bs-btn-hover-bg:var(--boldcolor)!important;
 }
 
 ._card-footer{
-  background-color: var(--boldcolor)!important;
-  font-weight: 400;
-  color:white!important;
+  background-color: var(--bgcolor)!important;
+  font-weight: 400!important;
+  color:var(--bgcolor)!important;
+}
+
+._card-footer > a{
+  --bs-btn-color:var(--boldcolor);
+  --bs-btn-font-weight: 400;
+  --bs-btn-font-size: 1.2rem;
 }
 
 ._card-footer:hover{
-  background-color: var(--bgaltcolor)!important;
+  background-color: var(--boldcolor)!important;
+  color:var(--bgcolor)!important;
+}
+._card-footer:hover > a{
+  --bs-btn-color:var(--bgcolor);
 }
 
 ._card-img-top{
