@@ -27,7 +27,8 @@ hr{
 }
 
 h1{
-  font-size: 4rem!important;
+  font-size: 2.1rem!important;
+  font-weight: 700!important;
 }
 h3{
   font-size:2.5rem!important;
@@ -37,8 +38,16 @@ h3{
   font-weight: 600!important;
 } */
 
-h1{
-  font-weight: 700!important;
+@media (min-width: 768px) { 
+  h1{
+    font-size: 3rem!important;
+  }
+}
+
+@media (min-width: 992px) { 
+  h1{
+    font-size: 4rem!important;
+  }
 }
 
 ._hero{
@@ -58,12 +67,12 @@ h1{
   /* margin-left:20px!important; */
   /* margin: 20px 0px 20px 0px;  */
 }
-._heroL{
+/* ._heroL{
   text-align: right;
-}
-._heroR{
+} */
+/* ._heroR{
   text-align: left;
-}
+} */
 
 ._sepB{
   background-image: url(./images/svg/styletop.svg);
