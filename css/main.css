@@ -1,11 +1,34 @@
 :root {
   /* --bgcolor: #C7F9CC; */
-  --bgcolor: #E1ECF3;
+  
+  /* Original */
+  /* --bgcolor: #E1ECF3;
   --textcolor: black;
   --accentcolor: #57CC99;
   --bgaltcolor: #38A3A5;
-  --lvl2color: white;
-  --boldcolor: #22577A;
+  --bgboldcolor: #22577A;
+  --textsize: 1.3rem;
+  --paddingsections: 20px; */
+  
+  /* Blue and Yellow
+  --bgcolor: #4362ca;
+  --bgaltcolor: #eacf00;
+  --bgboldcolor: #4362ca;
+  --textcolor: white;
+  --textaltcolor: black;
+  --textboldcolor: white;
+  --accentcolor: #f5788b;
+  --textsize: 1.3rem;
+  --paddingsections: 20px; */
+  
+  /* Blue Mono */
+  --bgcolor: #4362ca;
+  --bgaltcolor: #f7f0fc;
+  --bgboldcolor: #334da1;
+  --textcolor: white;
+  --textaltcolor: black;
+  --textboldcolor: white;
+  --accentcolor: #eacf00;
   --textsize: 1.3rem;
   --paddingsections: 20px;
 }
@@ -52,13 +75,13 @@ h3{
 
 ._hero{
   /* background-image: url(./images/svg/topdark.svg); */
-  background-color: var(--boldcolor);
+  background-color: var(--bgboldcolor);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top:var(--paddingsections);
   padding-bottom: var(--paddingsections);
-  color:var(--accentcolor);
+  color:var(--textboldcolor);
 }
 
 ._heroR{
@@ -74,6 +97,9 @@ h3{
   text-align: left;
 } */
 
+._topics{
+  background-color: var(--bgaltcolor);
+}
 ._sepB{
   background-image: url(./images/svg/styletop.svg);
   background-position: center bottom;
@@ -92,22 +118,24 @@ h3{
 
 ._bg{
   background-color: var(--bgcolor);
+  color:var(--textcolor);
   padding-top:var(--paddingsections);
   padding-bottom: var(--paddingsections);
 }
 
 ._bg-alt{
   background-color: var(--bgaltcolor);
+  color:var(--textaltcolor);
   padding-top:var(--paddingsections);
   padding-bottom: var(--paddingsections);
 }
 
 ._heading{
-  background-color: var(--boldcolor);
+  background-color: var(--bgboldcolor);
 }
 
 ._nav{
-  background-color: var(--boldcolor);
+  background-color: var(--bgboldcolor);
 }
 
 ._nav-item{
@@ -122,7 +150,7 @@ h3{
   padding: 10px !important;
   font-size: 1rem!important;
   color: rgba(255,255,255,0.8)!important;
-  background-color:var(--boldcolor)!important;
+  background-color:var(--bgboldcolor)!important;
   border-color:var(--bgcolor)!important;
   font-weight:bold!important;
 }
@@ -133,7 +161,15 @@ h3{
   color: white!important;
 }
 
+.card-title{
+  font-weight: bold;
+}
 
+.card-body > i{
+  color:var(--bgboldcolor);
+  font-size:4rem;
+  padding-bottom:20px;
+}
 ._card-img{
   width: 100%;
   height: 15vw;
@@ -171,39 +207,57 @@ h3{
 
 
 ._btn{
+  margin: 10px;
   font-size: var(--textsize)!important;
-  --bs-btn-color: var(--boldcolor)!important;
+  --bs-btn-color: var(--textcolor)!important;
   --bs-btn-bg:var(--bgcolor)!important;
   --bs-btn-font-weight:600!important;
   --bs-btn-border-width: 3px!important;
-  --bs-btn-border-color: var(--boldcolor)!important;
-  --bs-btn-hover-border-color: var(--boldcolor)!important;
+  --bs-btn-border-color: var(--textcolor)!important;
+  --bs-btn-hover-border-color: var(--textcolor)!important;
   --bs-btn-hover-color:var(--bgcolor)!important;
-  --bs-btn-hover-bg:var(--boldcolor)!important;
+  --bs-btn-hover-bg: var(--textcolor)!important;
   --bs-btn-active-border-color: transparent!important;
 }
 
 .btn{
   --bs-btn-active-border-color: transparent!important;
 }
+
+#myCarousel .card{
+  border:2px solid var(--bgcolor)!important;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.carousel-inner{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
 ._card-footer{
-  background-color: var(--bgcolor)!important;
+  background-color: var(--bgaltcolor)!important;
   font-weight: 400!important;
   color:var(--bgcolor)!important;
 }
 
 ._card-footer > a{
-  --bs-btn-color:var(--boldcolor);
+  transition: 0.3s ease;
+  --bs-btn-color:var(--bgboldcolor);
   --bs-btn-font-weight: 400;
   --bs-btn-font-size: 1.2rem;
 }
 
 ._card-footer:hover{
-  background-color: var(--boldcolor)!important;
-  color:var(--bgcolor)!important;
+  background-color: var(--bgcolor)!important;
+  color:var(--textcolor)!important;
+  box-sizing: border-box!important;
+  border: 1px solid var(--textcolor);
 }
 ._card-footer:hover > a{
-  --bs-btn-color:var(--bgcolor);
+  --bs-btn-color:var(--textcolor);
 }
 
 ._card-img-top{
@@ -216,7 +270,7 @@ h3{
 }
 
 .card-title{
-  color:var(--boldcolor)!important;
+  color:var(--bgboldcolor)!important;
   text-weight:400!important;
 }
 
@@ -226,4 +280,5 @@ h3{
 }
 ._title{
   font-weight: 600!important;
+  margin-bottom:20px;
 }
