@@ -45,6 +45,7 @@
           </div>
       </nav>
   </section>
+  
     <section name="Desc" class="desc _bg section-bubble3">
       <div class="container">
         <div class="row">
@@ -151,29 +152,29 @@ It's important for you as an Indian internet user to be aware of these tactics a
               <div class="row">
                 <div class="col-md-4 d-flex align-items-stretch">
                   <div class="card">
-                    <img src="https://actearly.uk/app/uploads/2020/11/video-bg.png" class="card-img-top _card-img-top" alt="...">
+                    <img src="./res/video-bg.png" class="card-img-top _card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Radicalisation and the internet</h5>
                       
-                    </div><div class="card-footer _card-footer"><a href="https://actearly.uk/radicalisation/online-safety/" class="btn w-100 h-100">Know More</a></div>
+                    </div><div class="card-footer _card-footer"><a href="RadicalizationAndTheInternet.html" class="btn w-100 h-100">Know More</a></div>
                   </div>
                 </div>
                 <div class="col-md-4 d-flex align-items-stretch">
                   <div class="card">
-                    <img src="https://th-i.thgim.com/public/incoming/w15jdn/article66680538.ece/alternates/LANDSCAPE_1200/IMG_Media_and_policemen__2_1_61AC1564.jpg" class="card-img-top _card-img-top" alt="...">
+                    <img src="./res/IMG_Media_and_policemen__2_1_61AC1564.jpg" class="card-img-top _card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">PFI used social media handles to spread communal hatred, target government, judiciary: NIA</h5>
+                      <h5 class="card-title">A Story of Online Radicalization in India</h5>
                       
-                    </div><div class="card-footer _card-footer"><a href="https://www.thehindu.com/news/national/pfi-members-used-social-media-accounts-to-spread-communal-hatred-target-govt-and-higher-judiciary-nia/article66679738.ece" class="btn w-100 h-100">Know More</a></div>
+                    </div><div class="card-footer _card-footer"><a href="aStoryOfOnlineRadicalizationInIndia.html" class="btn w-100 h-100">Know More</a></div>
                   </div>
                 </div>
                 <div class="col-md-4 d-flex align-items-stretch">
                   <div class="card">
                     <img src="/images/hfulcontent.png" class="card-img-top _card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Why these 8 harms? </h5>
+                      <h5 class="card-title">Types of Online Misconduct</h5>
                       
-                    </div><div class="card-footer _card-footer"><a href="https://reportharmfulcontent.com/harms/" class="btn w-100 h-100">Know More</a></div>
+                    </div><div class="card-footer _card-footer"><a href="TypesOfOnlineMisconduct.html" class="btn w-100 h-100">Know More</a></div>
                   </div>
                 </div>
               </div>
@@ -204,51 +205,81 @@ It's important for you as an Indian internet user to be aware of these tactics a
         </div>
         
     </section>
+    
+    
     <section name="survey" class="_nav p-4">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3 class="font-weight-bold text-center _title text-light">Is this site Helpful?</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="form-group text-center" id="rating-ability-wrapper">
-            <label class="control-label" for="rating">
-            <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
-            </label>
-            <!-- <hr class="_passthrough"> -->
-            <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="1" id="rating-star-1">
-                <i class="fa-regular fa-circle" aria-hidden="true"></i>
-  <i class="fa-solid fa-circle" aria-hidden="true" style="display:none"></i>
-            </button>
-            <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="2" id="rating-star-2">
-                <i class="fa-regular fa-circle" aria-hidden="true"></i>
-  <i class="fa-solid fa-circle" aria-hidden="true" style="display:none"></i>
-            </button>
-            <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="3" id="rating-star-3">
-                <i class="fa-regular fa-circle" aria-hidden="true"></i>
-  <i class="fa-solid fa-circle" aria-hidden="true" style="display:none"></i>
-            </button>
-            <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="4" id="rating-star-4">
-                <i class="fa-regular fa-circle" aria-hidden="true"></i>
-  <i class="fa-solid fa-circle" aria-hidden="true" style="display:none"></i>
-            </button>
-            <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="5" id="rating-star-5">
-                <i class="fa-regular fa-circle" aria-hidden="true"></i>
-  <i class="fa-solid fa-circle" aria-hidden="true" style="display:none"></i>
-            </button>
+      </div>
+    
+    
+
+      <div class="rating-icon rounded-pill p-3" id="rating-icon" data-bs-toggle="modal" data-bs-target="#rating-popup" style="background-color:#49fdb4; border: 3px solid #6700ea">
+        <p class="p-0 m-0"><i class="fa-solid fa-star"></i>Rate Us</p>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="rating-popup" tabindex="-1" role="dialog" aria-labelledby="rating-popup-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" style="background-color: var(--bgcolor)!important;">
+            <div class="modal-header">
+              <h4 class="modal-titlefont-weight-bold text-center _title text-light" id="rating-popup-label">Is this site Helpful?</h4>
+              <button type="button" class="close rounded-pill align-self-baseline border-0" data-bs-dismiss="modal" aria-label="Close">
+                <i class="fa-solid fa-x p-1"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="form-group text-center" id="rating-ability-wrapper">
+                    <label class="control-label" for="rating">
+                    <input type="hidden" id="selected_rating" name="selected_rating" value="0" required="required">
+                    </label>
+                    <!-- <hr class="_passthrough"> -->
+                    <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="1" id="rating-star-1">
+                        <i class="fa-regular fa-star dfghjk" aria-hidden="true"></i>
+          <i class="fa-solid fa-star dfghjk" aria-hidden="true" style="display:none"></i>
+                    </button>
+                    <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="2" id="rating-star-2">
+                        <i class="fa-regular fa-star dfghjk" aria-hidden="true"></i>
+          <i class="fa-solid fa-star dfghjk" aria-hidden="true" style="display:none"></i>
+                    </button>
+                    <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="3" id="rating-star-3">
+                        <i class="fa-regular fa-star dfghjk" aria-hidden="true"></i>
+          <i class="fa-solid fa-star dfghjk" aria-hidden="true" style="display:none"></i>
+                    </button>
+                    <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="4" id="rating-star-4">
+                        <i class="fa-regular fa-star dfghjk" aria-hidden="true"></i>
+          <i class="fa-solid fa-star dfghjk" aria-hidden="true" style="display:none"></i>
+                    </button>
+                    <button type="button" class="btnrating btn btn-default rounded-circle" data-attr="5" id="rating-star-5">
+                        <i class="fa-regular fa-star dfghjk" aria-hidden="true"></i>
+          <i class="fa-solid fa-star dfghjk" aria-hidden="true" style="display:none"></i>
+                    </button>
+                </div>
+              </div>
+              <div class="row">
+                <!-- <div class="col-6 text-left">Rate Us out of 10</div> -->
+                <div class="col-12 text-center">
+                  <h4 class="bold rating-header text-light" style="display: solid;">
+                    Rating: <span class="selected-rating">-</span><small> / 5</small>
+                  </h4>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div> -->
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- <div class="col-6 text-left">Rate Us out of 10</div> -->
-        <div class="col-12 text-center">
-          <h2 class="bold rating-header text-light" style="display: solid;">
-            Rating: <span class="selected-rating">0</span><small> / 5</small>
-          </h2>
-        </div>
-      </div>
-      </div>
-        
-      </section>
+    <!--  -->
+    
+  </section>
   </body>
 </html>

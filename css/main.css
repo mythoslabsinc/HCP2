@@ -31,6 +31,7 @@
   --accentcolor: #eacf00;
   --textsize: 1.3rem;
   --paddingsections: 20px;
+  --bs-btn-hover-color:#00ffd4;
 }
 
 * {
@@ -281,4 +282,52 @@ h3{
 ._title{
   font-weight: 600!important;
   margin-bottom:20px;
+}
+
+
+/* Styling for the blockquote */
+blockquote {
+  background-color: #f7f7f7;
+  border-left: 4px solid #3498db;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+/* Styling for the quoted text */
+blockquote p {
+  font-style: italic;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Rating */
+
+.rating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Styles for the pop-up */
+.rating-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 50%;
+  min-height: 50vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.rating-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
 }
